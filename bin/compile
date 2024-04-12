@@ -11,7 +11,7 @@ if [ ! -f $CACHE_DIR/cloud_sql_proxy ]; then
 fi
 
 echo "-----> Downloading cloud_sql_proxy"
-wget https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.0.0/cloud-sql-proxy.linux.amd64 -O $CACHE_DIR/cloud_sql_proxy
+wget https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.10.1/cloud-sql-proxy.linux.amd64 -O $CACHE_DIR/cloud_sql_proxy
 
 echo "-----> Vendoring cloud_sql_proxy into slug"
 if [ ! -d $BUILD_DIR/google/bin ]; then
